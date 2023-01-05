@@ -8,7 +8,7 @@
                             class="mbl-top d-flex align-items-center justify-content-between container position-relative d-lg-none">
                             <div class="d-flex align-items-center">
                                 <a href="{{ route('website.home') }}" class="brand-logo">
-                                    <img src="{{ $setting->dark_logo_url }}" alt="">
+                                    <img src="{{asset('frontend/assets/images/logo/footer-logo.jpg')}}" alt="">
                                 </a>
                             </div>
 

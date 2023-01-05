@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="@yield('description')">
-    <meta property="og:image" content="@yield('og:image')">
-    <title>@yield('title') - {{ config('app.name') }}</title>
+    <meta name="description" content="@yield('')">
+    <meta property="og:image" content="@yield('')">
+    <title>@yield('')  {{ config('app.name') }}</title>
     @routes
     {{-- Style --}}
     @include('website.partials.links')
