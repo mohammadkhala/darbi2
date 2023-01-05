@@ -4,19 +4,19 @@
             <div class="row">
                 <div class="col-lg-4 col-md-5 col-sm-6 rt-single-widget ">
                     <a href="#" class="footer-logo">
-                        <img src="{{ $setting->light_logo_url }}" alt="">
+                        <img src="{{asset('frontend/assets/images/logo/footer-logo.jpg')}}" alt="">
                     </a>
                     <address>
                         <div class="body-font-2 text-gray-500">
                             @if ($cms_setting->footer_phone_no)
                                 <div class="body-font-2 text-gray-500">
                                     <span>{{ __('call_now') }}:</span>
-                                    <a href="tel:{{ $cms_setting->footer_phone_no }}" class="text-gray-10">
-                                        {{ $cms_setting->footer_phone_no }}</a>
+                                    <a href="tel:0594513978" class="text-gray-10">
+                                        0594513978</a>
                                 </div>
                             @endif
                             <div class="max-312 body-font-4 mt-2 text-gray-500">
-                                {{ $cms_setting->footer_address }}
+                                فلسطين - الخليل
                             </div>
                         </div>
                     </address>
@@ -78,7 +78,7 @@
                     <ul class="footer-social-links">
                         @if ($cms_setting->footer_facebook_link)
                             <li>
-                                <a href="{{ $cms_setting->footer_facebook_link }}">
+                                <a href="https://www.facebook.com/darbi.palestine">
                                     <svg width="10" height="20" viewBox="0 0 10 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path

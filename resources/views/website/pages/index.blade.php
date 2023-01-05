@@ -258,7 +258,7 @@
             <div class="row">
                 <div class="col-12 text-center text-h4 ft-wt-5">
                     <span class="text-primary-500 has-title-shape">{{ config('app.name') }}
-                        <img src="{{ asset('frontend') }}/assets/images/all-img/title-shape.png" alt="">
+                        <img src="" alt="">
                     </span>
                     <label for="">{{ __('working_process') }}</label>
                 </div>
@@ -267,7 +267,7 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-6 rt-mb-24 position-parent">
                     <div class="has-arrow">
-                        <img src="{{ asset('frontend') }}/assets/images/all-img/arrow-1.png" alt=""
+                        <img src="{{ asset('frontend') }}/assets/images/all-img/arrow.png" alt=""
                             draggable="false">
                     </div>
                     <div class="rt-single-icon-box working-progress icon-center">
@@ -286,7 +286,7 @@
                 </div>
                 <div class="col-lg-3 rt-mb-24 col-sm-6 position-parent">
                     <div class="has-arrow middle">
-                        <img src="{{ asset('frontend') }}/assets/images/all-img/arrow-2.png" alt=""
+                        <img src="{{ asset('frontend') }}/assets/images/all-img/arrow.png" alt=""
                             draggable="false">
                     </div>
                     <div class="rt-single-icon-box working-progress icon-center">
@@ -305,7 +305,7 @@
                 </div>
                 <div class="col-lg-3 rt-mb-24 col-sm-6 position-parent">
                     <div class="has-arrow">
-                        <img src="{{ asset('frontend') }}/assets/images/all-img/arrow-1.png" alt=""
+                        <img src="{{ asset('frontend') }}/assets/images/all-img/arrow.png" alt=""
                             draggable="false">
                     </div>
                     <div class="rt-single-icon-box working-progress icon-center">

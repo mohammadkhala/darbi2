@@ -1,4 +1,4 @@
-<link rel="icon" type="image/png" href="{{ asset($setting->favicon_image) }}">
+<link rel="icon" type="image/png" href="{{asset('frontend/assets/images/logo/footer-logo.jpg')}}">
 <link rel="stylesheet" href="{{ mix('frontend/vendor.min.css') }}">
 <link rel="stylesheet" href="{{ mix('frontend/app.min.css') }}">
 <link rel="stylesheet" href="{{ asset('frontend') }}/assets/css/customfont.css">
