@@ -27,7 +27,7 @@
                         <h2 class="rt-mb-40 {{ $setting->nav_color ? '' : $setting->nav_color }}">
                             {{ __('we_are_highly_skilled_and_professionals_team') }}</h2>
                         <p class="body-font-2 text-gray-500 rt-mb-0">
-                            {{ __('praesent_non_sem_facilisis_hendrerit_nisi_vitae_volutpat_quam_Aliquam_metus_mauris_semper') }}
+                            {{ __('') }}
                         </p>
                     </div>
                 </div>
@@ -165,7 +165,7 @@
                             class="body-font-3 ft-wt-5 text-primary-500 rt-mb-15 d-inline-block">{{ __('our_mission') }}</span>
                         <h3 class="rt-mb-32">{{ __('we_are_highly_skilled_and_professionals_team') }}</h3>
                         <p class="body-font-2 text-gray-500 rt-mb-0">
-                            {{ __('praesent_non_sem_facilisis_hendrerit_nisi_vitae_volutpat_quam_Aliquam_metus_mauris_semper_metus') }}
+                            {{ __('') }}
                         </p>
                     </div>
                     <div class="col-md-6">
