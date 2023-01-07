@@ -105,6 +105,8 @@ Route::prefix('admin')->group(function () {
 
         Route::put('settings/account/complete/update', [CmsController::class, 'accountCompleteUpdate'])->name('settings.account.complate.update');
         Route::put('settings/maintenance/mode/update', [CmsController::class, 'maintenanceModeUpdate'])->name('settings.maintenance.mode.update');
+        // Freelancer Controller
+
 
         //Dashboard Route
         Route::controller(AdminController::class)->group(function () {

@@ -19,7 +19,6 @@ use Illuminate\Support\Facades\Storage;
 use Modules\Language\Entities\Language;
 use Stichoza\GoogleTranslate\GoogleTranslate;
 use AmrShawky\LaravelCurrency\Facade\Currency;
-
 // =====================================================
 // ===================Image Function====================
 // =====================================================

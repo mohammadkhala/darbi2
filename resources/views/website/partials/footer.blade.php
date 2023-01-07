@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-5 col-sm-6 rt-single-widget ">
                     <a href="#" class="footer-logo">
-                        <img src="{{asset('frontend/assets/images/logo/footer-logo.jpg')}}" alt="">
+                        <img src="{{asset('frontend/assets/images/logo/footer.jpg')}}" sizes="200px" alt="">
                     </a>
                     <address>
                         <div class="body-font-2 text-gray-500">
