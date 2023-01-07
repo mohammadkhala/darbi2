@@ -8,7 +8,8 @@
                             class="mbl-top d-flex align-items-center justify-content-between container position-relative d-lg-none">
                             <div class="d-flex align-items-center">
                                 <a href="{{ route('website.home') }}" class="brand-logo">
-                                    <img src="{{asset('frontend/assets/images/logo/logo.jpg')}}"alt="" style="width: 200px; height: 200px">
+                                    <img src="{{ asset('frontend/assets/images/logo/logo.jpg') }}"alt=""
+                                        style="width: 200px; height: 200px">
                                 </a>
                             </div>
 

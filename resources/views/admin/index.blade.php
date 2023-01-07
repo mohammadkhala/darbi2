@@ -10,7 +10,7 @@
     </div>
 @endsection
 @section('content')
-    @if ($appSetup->where('status', 0)->count())
+    @if($appSetup->where('status', 0)->count())
         <x-setup-guide />
     @endif
     <div class="row">
@@ -20,9 +20,7 @@
                 <div class="info-box-content">
                     <span class="info-box-text">{{ __('earnings') }}</span>
                     <span class="info-box-number">
-                        {{ currencyPosition($data['earnings']) }} @if ($data['earnings'] == null || $data['earnings'] == 0)
-                            0
-                        @endif
+                        {{ currencyPosition($data['earnings']) }} @if($data['earnings'] == null || $data['earnings'] == 0) 0 @endif
                         <span data-toggle="tooltip"
                             title="All the earnings are converted to '{{ config('jobpilot.currency') }}' currency">
                             <x-svg.info-icon />
@@ -126,22 +124,22 @@
                     <h3 class="card-title">{{ __('popular_location') }}</h3>
                 </div>
                 @if (count($popular_countries->pluck('country')->all()) == 0)
-                    <div class="card-body">
-                        <table class="table table-vcenter mb-0">
-                            <tr>
-                                <td colspan="4" class="text-center">
-                                    <div class="empty py-5">
-                                        <x-not-found message="{{ __('no_data_found') }}" />
-                                    </div>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div class="card-body">
+                    <table class="table table-vcenter mb-0">
+                                <tr>
+                                    <td colspan="4" class="text-center">
+                                        <div class="empty py-5">
+                                            <x-not-found message="{{ __('no_data_found') }}" />
+                                        </div>
+                                    </td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
                 @else
-                    <div class="card-body">
-                        <canvas id="locationChart" class="chart-design"></canvas>
-                    </div>
+                <div class="card-body">
+                    <canvas id="locationChart" class="chart-design"></canvas>
+                </div>
                 @endif
                 <!-- /.card-body -->
             </div>
