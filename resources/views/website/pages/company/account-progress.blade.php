@@ -7,7 +7,7 @@
                     <div class="row w-100">
                         <div class="col-sm-12 col-md-6">
                             <a href="{{ route('website.home') }}" class="brand-logo">
-                                <img src="{{ $setting->dark_logo_url }}" alt="jobpilot_logo">
+                                <img src="{{ asset('frontend/assets/images/logo/logo.jpg') }}" >
                             </a>
                         </div>
                         <div class="col-sm-12 col-md-6 d-flex align-items-center justify-content-center">

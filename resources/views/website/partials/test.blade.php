@@ -120,9 +120,9 @@
                         <div class="header-top-right">
                             @if ($cms_setting->footer_phone_no)
                                 <div class="header-top-info">
-                                    <a class="contact-info" href="tel:{{ $cms_setting->footer_phone_no }}">
+                                    <a class="contact-info" href="tel:0594513978">
                                         <x-svg.telephone2-icon />
-                                        {{ $cms_setting->footer_phone_no }}
+                                        0594513978
                                     </a>
                                 </div>
                             @endif
