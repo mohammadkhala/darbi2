@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Website\CompanyController;
 use App\Http\Controllers\Website\WebsiteController;
 use App\Http\Controllers\Auth\SocialLoginController;
+use App\Http\Controllers\Websilte\CVController;
 use App\Http\Controllers\Website\CandidateController;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 
@@ -59,6 +60,10 @@ Route::controller(WebsiteController::class)->name('website.')->group(function ()
     Route::get('/selected/country', 'setSelectedCountry')->name('set.country');
     Route::get('/selected/country/remove', 'removeSelectedCountry')->name('remove.country');
     Route::get('job/autocomplete', 'jobAutocomplete')->name('job.autocomplete');
+});
+//cv builder
+Route::controller(CVController::class)->name('cv.')->group(function () {
+
 });
 
 // Social Authentication

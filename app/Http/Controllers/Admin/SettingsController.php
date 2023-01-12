@@ -22,7 +22,7 @@ use Modules\SetupGuide\Entities\SetupGuide;
 use Modules\Currency\Http\Controllers\CurrencyController;
 use Modules\Language\Http\Controllers\TranslationController;
 use Spatie\Sitemap\Tags\Url;
-use Spatie\Sitemap\Sitemap;
+use Spatie\Sitemap\sitemap;
 
 class SettingsController extends Controller
 {
