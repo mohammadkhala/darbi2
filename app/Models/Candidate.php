@@ -14,6 +14,15 @@ class Candidate extends Model
 
     protected $guarded = [];
 
+    protected $filable = ['start_date' ,
+    'end_date',
+    'city' ,
+    'ex_start_date' ,
+    'ex_end_date',
+    'org_name' ,
+    'position' ,
+    'work_city' ];
+
     protected $appends = ['full_address'];
 
     protected $casts = [

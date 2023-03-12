@@ -258,8 +258,24 @@ class CandidateController extends Controller
 
         $candidate->update([
             'title' => $request->title,
+
+            'start_date' => $request->start_date,
+            'end_date' => $request->end_date,
+            'city' => $request->city,
+            'ex_start_date' => $request->ex_start_date,
+            'ex_end_date' => $request->ex_end_date,
+            'org_name' => $request->org_name,
+            'position' => $request->position,
+            'work_city' => $request->work_city,
+            'language' => $request->language,
+            'language_level' => $request->language_level,
+            'ref_name' => $request->ref_name,
+            'ref_position' => $request->ref_position,
+            'ref_mobile' => $request->ref_mobile,
+            'ref_address' => $request->ref_address,
             'experience_id' => $experience->id,
             'education_id' => $education->id,
+
             'website' => $request->website,
         ]);
 
@@ -477,5 +493,8 @@ class CandidateController extends Controller
         $resume->delete();
 
         return back()->with('success', 'Resume deleted successfully');
+    }
+    public function cvBuilder(){
+        return view('website.pages.candidate.cv');
     }
 }

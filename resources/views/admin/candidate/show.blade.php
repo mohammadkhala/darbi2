@@ -53,10 +53,78 @@
                                     </td>
                                 </tr>
                                 <tr class="mb-5">
+                                    <th width="20%">{{ __('ex_start_date') }}</th>
+                                    <td width="80%">{{ $candidate->ex_start_date ? $candidate->ex_start_date : '' }}
+                                    </td>
+                                </tr>
+                                <tr class="mb-5">
+                                    <th width="20%">{{ __('ex_end_date') }}</th>
+                                    <td width="80%">{{ $candidate->ex_end_date ? $candidate->ex_end_date : '' }}
+                                    </td>
+                                </tr>
+                                <tr class="mb-5">
+                                    <th width="20%">{{ __('org_name') }}</th>
+                                    <td width="80%">{{ $candidate->org_name ? $candidate->org_name : '' }}
+                                    </td>
+                                </tr>
+                                <tr class="mb-5">
+                                    <th width="20%">{{ __('position') }}</th>
+                                    <td width="80%">{{ $candidate->position ? $candidate->position : '' }}
+                                    </td>
+                                </tr>
+                                <tr class="mb-5">
+                                    <th width="20%">{{ __('work_city') }}</th>
+                                    <td width="80%">{{ $candidate->work_city ? $candidate->work_city : '' }}
+                                    </td>
+                                </tr>
+                                <tr class="mb-5">
+                                    <th width="20%">{{ __('language') }}</th>
+                                    <td width="80%">{{ $candidate->language ? $candidate->language : '' }}
+                                    </td>
+                                </tr>
+                                <tr class="mb-5">
+                                    <th width="20%">{{ __('language_level') }}</th>
+                                    <td width="80%">{{ $candidate->language_level ? $candidate->language_level : '' }}
+                                    </td>
+                                </tr>
+                                <tr class="mb-5">
+                                    <th width="20%">{{ __('reference_name') }}</th>
+                                    <td width="80%">{{ $candidate->ref_name ? $candidate->ref_name : '' }}
+                                    </td>
+                                </tr>
+                                <tr class="mb-5">
+                                    <th width="20%">{{ __('reference_position') }}</th>
+                                    <td width="80%">{{ $candidate->ref_position ? $candidate->ref_position : '' }}
+                                    </td>
+                                </tr>
+                                <tr class="mb-5">
+                                    <th width="20%">{{ __('reference_mobile') }}</th>
+                                    <td width="80%">{{ $candidate->ref_mobile ? $candidate->ref_mobile : '' }}
+                                    </td>
+                                </tr>
+                                <tr class="mb-5">
+                                    <th width="20%">{{ __('reference_address') }}</th>
+                                    <td width="80%">{{ $candidate->ref_address ? $candidate->ref_address : '' }}
+                                    </td>
+                                </tr>
+
+                                <tr class="mb-5">
                                     <th width="20%">{{ __('education') }}</th>
                                     <td width="80%">{{ $candidate->education ? $candidate->education->name : '' }}
                                     </td>
-                                </tr>
+                                </tr> <tr class="mb-5">
+                                    <th width="20%">{{ __('start_date') }}</th>
+                                    <td width="80%">{{ $candidate->start_date ? $candidate->start_date : '' }}
+                                    </td>
+                                </tr> <tr class="mb-5">
+                                    <th width="20%">{{ __('end_date') }}</th>
+                                    <td width="80%">{{ $candidate->end_date ? $candidate->end_date : ''  }}
+                                    </td>
+                                </tr> <tr class="mb-5">
+                                    <th width="20%">{{ __('city') }}</th>
+                                    <td width="80%">{{ $candidate->city ? $candidate->city: '' }}
+                                    </td>
+
                                 <tr class="mb-5">
                                     <th width="20%">{{ __('gender') }}</th>
                                     <td width="80%">{{ ucfirst($candidate->gender) }}</td>

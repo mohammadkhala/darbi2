@@ -153,6 +153,68 @@
                                             @enderror
                                         </div>
                                     </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <x-forms.label :required="true" name="ex_start_date"
+                                            class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                        <div class="fromGroup">
+                                            <div class="form-control-icon">
+                                                <x-forms.input type="date" name="ex_start_date"
+                                                    value="" placeholder="{{ __('experience_start_date') }}"
+                                                    class="" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <x-forms.label :required="true" name="ex_end_date"
+                                            class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                        <div class="fromGroup">
+                                            <div class="form-control-icon">
+                                                <x-forms.input type="date" name="ex_end_date"
+                                                    value="" placeholder="{{ __('experience_end_date') }}"
+                                                    class="" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mb-3">
+                                        <x-forms.label :required="true" name="org_name"
+                                            class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                        <div class="fromGroup">
+                                            <div class="form-control-icon">
+                                                <x-forms.input type="text" name="org_name"
+                                                    value="" placeholder="{{ __('organization_name') }}"
+                                                    class="" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <x-forms.label :required="true" name="work_city"
+                                            class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                        <div class="fromGroup">
+                                            <div class="form-control-icon">
+                                                <x-forms.input type="text" name="work_city"
+                                                    value="" placeholder="{{ __('work_city') }}"
+                                                    class="" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mb-3">
+                                        <x-forms.label :required="true" name="position"
+                                            class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                        <div class="fromGroup">
+                                            <div class="form-control-icon">
+                                                <x-forms.input type="text" name="position"
+                                                    value="" placeholder="{{ __('position') }}"
+                                                    class="" />
+                                            </div>
+
+                                        </div>
+                                    </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <x-forms.label name="job_role" :required="false" />
@@ -183,6 +245,126 @@
                                             @enderror
                                         </div>
                                     </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <x-forms.label :required="true" name="start_date"
+                                            class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                        <div class="fromGroup">
+                                            <div class="form-control-icon">
+                                                <x-forms.input type="date" name="start_date"
+                                                    value="" placeholder="{{ __('start_date') }}"
+                                                    class="" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mb-3">
+                                        <x-forms.label :required="true" name="end_date"
+                                            class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                        <div class="fromGroup">
+                                            <div class="form-control-icon">
+                                                <x-forms.input type="date" name="end_date"
+                                                    value="" placeholder="{{ __('end_date') }}"
+                                                    class="" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mb-3">
+                                        <x-forms.label :required="true" name="city"
+                                            class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                        <div class="fromGroup">
+                                            <div class="form-control-icon">
+                                                <x-forms.input type="text" name="city"
+                                                    value="" placeholder="{{ __('city') }}"
+                                                    class="" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <x-forms.label :required="true" name="language"
+                                            class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                        <div class="fromGroup">
+                                            <div class="form-control-icon">
+                                                <x-forms.input type="text" name="language"
+                                                    value="" placeholder="{{ __('language') }}"
+                                                    class="" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <x-forms.label name="language_level" :required="false" />
+                                            <select name="language_level" id="language_level"
+                                                class="form-control @error('gender') is-invalid @enderror">
+                                                <option value="basic">{{ __('basic') }}</option>
+                                                <option value="intermediate">{{ __('intermediate') }}</option>
+                                                <option value="advanced">{{ __('advanced') }}</option>
+
+                                            </select>
+                                            @error('language_level')
+                                                <span class="invalid-feedback" role="alert">{{ __($message) }}</span>
+                                            @enderror
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-lg-6 mb-3">
+                                        <x-forms.label :required="true" name="reference_name"
+                                            class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                        <div class="fromGroup">
+                                            <div class="form-control-icon">
+                                                <x-forms.input type="text" name="ref_name"
+                                                    value="" placeholder="{{ __('reference_name') }}"
+                                                    class="" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <x-forms.label :required="true" name="reference_position"
+                                            class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                        <div class="fromGroup">
+                                            <div class="form-control-icon">
+                                                <x-forms.input type="text" name="ref_position"
+                                                    value="" placeholder="{{ __('reference_position') }}"
+                                                    class="" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <x-forms.label :required="true" name="reference_mobile"
+                                            class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                        <div class="fromGroup">
+                                            <div class="form-control-icon">
+                                                <x-forms.input type="text" name="ref_mobile"
+                                                    value="" placeholder="{{ __('reference_mobile') }}"
+                                                    class="" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mb-3">
+                                        <x-forms.label :required="true" name="reference_address"
+                                            class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                        <div class="fromGroup">
+                                            <div class="form-control-icon">
+                                                <x-forms.input type="text" name="ref_address"
+                                                    value="" placeholder="{{ __('reference_address') }}"
+                                                    class="" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <x-forms.label name="gender" :required="false" />
@@ -190,7 +372,7 @@
                                                 class="form-control @error('gender') is-invalid @enderror">
                                                 <option value="male">{{ __('male') }}</option>
                                                 <option value="female">{{ __('female') }}</option>
-                                                <option value="other">{{ __('other') }}</option>
+
                                             </select>
                                             @error('gender')
                                                 <span class="invalid-feedback" role="alert">{{ __($message) }}</span>

@@ -164,7 +164,6 @@ $current_language = currentLanguage() ? currentLanguage() : $defaultLanguage;
                 @foreach ($user->getRoleNames() as $role)
                     (<span>{{ ucwords($role) }}</span>)
                 @endforeach
-                <small>{{ __('member_since') }} {{ $user->created_at->format('M d, Y') }}</small>
             </p>
         </li>
         <!-- Menu Footer-->

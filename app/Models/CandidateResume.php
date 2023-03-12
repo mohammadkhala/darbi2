@@ -11,6 +11,11 @@ class CandidateResume extends Model
 
     protected $guarded = [];
     protected $appends = ['file_size'];
+    protected $fillable = [
+        'name',
+        'start_date',
+        'end_date',
+        'city'];
 
     public function getFileSizeAttribute()
     {

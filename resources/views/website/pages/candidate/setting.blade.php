@@ -92,21 +92,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-6 mb-3">
-                                                    <x-forms.label :required="true" name="experience"
-                                                        class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
-                                                    <select name="experience" class="select2-taggable w-100-p">
-                                                        @foreach ($experiences as $experience)
-                                                        <option
-                                                            {{ $candidate->experience_id == $experience->id ? 'selected' : '' }}
-                                                            value="{{ $experience->id }}">{{ $experience->name }}
-                                                        </option>
-                                                        @endforeach
-                                                    </select>
-                                                    @error('experience')
-                                                    <span class="text-danger">{{ $message }}</span>
-                                                    @enderror
-                                                </div>
+
                                                 <div class="col-lg-6 mb-3">
                                                     <x-forms.label :required="true" name="education"
                                                         class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
@@ -122,6 +108,220 @@
                                                     <span class="text-danger">{{ $message }}</span>
                                                     @enderror
                                                 </div>
+
+                                                <div class="col-lg-6 mb-3">
+                                                    <x-forms.label :required="true" name="start_date"
+                                                        class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                                    <div class="fromGroup">
+                                                        <div class="form-control-icon">
+                                                            <x-forms.input type="date" name="start_date"
+                                                                value="{{$candidate->start_date}}" placeholder="{{ __('start_date') }}"
+                                                                class="" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 mb-3">
+                                                    <x-forms.label :required="true" name="end_date"
+                                                        class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                                    <div class="fromGroup">
+                                                        <div class="form-control-icon">
+                                                            <x-forms.input type="date" name="end_date"
+                                                                value="{{$candidate->end_date}}" placeholder="{{ __('end_date') }}"
+                                                                class="" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 mb-3">
+                                                    <x-forms.label :required="true" name="city"
+                                                        class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                                    <div class="fromGroup">
+                                                        <div class="form-control-icon">
+                                                            <x-forms.input type="text" name="city"
+                                                                value="{{$candidate->city}}" placeholder="{{ __('city') }}"
+                                                                class="" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+
+
+
+
+
+
+
+
+                                                <div class="col-lg-6 mb-3">
+                                                    <x-forms.label :required="true" name="experience"
+                                                        class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                                    <select name="experience" class="select2-taggable w-100-p">
+                                                        @foreach ($experiences as $experience)
+                                                        <option
+                                                            {{ $candidate->experience_id == $experience->id ? 'selected' : '' }}
+                                                            value="{{ $experience->id }}">{{ $experience->name }}
+                                                        </option>
+                                                        @endforeach
+                                                    </select>
+                                                    @error('experience')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                    @enderror
+                                                </div>
+
+                                                <div class="col-lg-6 mb-3">
+                                                    <x-forms.label :required="true" name="ex_start_date"
+                                                        class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                                    <div class="fromGroup">
+                                                        <div class="form-control-icon">
+                                                            <x-forms.input type="date" name="ex_start_date"
+                                                                value="{{$candidate->ex_start_date}}" placeholder="{{ __('experience_start_date') }}"
+                                                                class="" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 mb-3">
+                                                    <x-forms.label :required="true" name="ex_end_date"
+                                                        class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                                    <div class="fromGroup">
+                                                        <div class="form-control-icon">
+                                                            <x-forms.input type="date" name="ex_end_date"
+                                                                value="{{$candidate->ex_end_date}}" placeholder="{{ __('experience_end_date') }}"
+                                                                class="" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 mb-3">
+                                                    <x-forms.label :required="true" name="org_name"
+                                                        class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                                    <div class="fromGroup">
+                                                        <div class="form-control-icon">
+                                                            <x-forms.input type="text" name="org_name"
+                                                                value="{{$candidate->org_name}}" placeholder="{{ __('organization_name') }}"
+                                                                class="" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 mb-3">
+                                                    <x-forms.label :required="true" name="work_city"
+                                                        class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                                    <div class="fromGroup">
+                                                        <div class="form-control-icon">
+                                                            <x-forms.input type="text" name="work_city"
+                                                                value="{{$candidate->work_city}}" placeholder="{{ __('work_city') }}"
+                                                                class="" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 mb-3">
+                                                    <x-forms.label :required="true" name="position"
+                                                        class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                                    <div class="fromGroup">
+                                                        <div class="form-control-icon">
+                                                            <x-forms.input type="text" name="position"
+                                                                value="{{$candidate->position}}" placeholder="{{ __('position') }}"
+                                                                class="" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="col-lg-6 mb-3">
+                                                    <x-forms.label :required="true" name="language"
+                                                        class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                                    <div class="fromGroup">
+                                                        <div class="form-control-icon">
+                                                            <x-forms.input type="text" name="language"
+                                                                value="{{$candidate->language}}" placeholder="{{ __('language') }}"
+                                                                class="" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <x-forms.label name="language_level" :required="false" />
+                                                        <select name="language_level" id="language_level"
+                                                            class="form-control @error('gender') is-invalid @enderror">
+                                                            <option value="basic">{{ __('basic') }}</option>
+                                                            <option value="intermediate">{{ __('intermediate') }}</option>
+                                                            <option value="advanced">{{ __('advanced') }}</option>
+
+                                                        </select>
+                                                        @error('language_level')
+                                                            <span class="invalid-feedback" role="alert">{{ __($message) }}</span>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="col-lg-6 mb-3">
+                                                    <x-forms.label :required="true" name="reference_name"
+                                                        class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                                    <div class="fromGroup">
+                                                        <div class="form-control-icon">
+                                                            <x-forms.input type="text" name="ref_name"
+                                                                value="{{$candidate->ref_name}}" placeholder="{{ __('reference_name') }}"
+                                                                class="" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 mb-3">
+                                                    <x-forms.label :required="true" name="reference_position"
+                                                        class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                                    <div class="fromGroup">
+                                                        <div class="form-control-icon">
+                                                            <x-forms.input type="text" name="ref_position"
+                                                                value="{{$candidate->ref_position}}" placeholder="{{ __('reference_position') }}"
+                                                                class="" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 mb-3">
+                                                    <x-forms.label :required="true" name="reference_mobile"
+                                                        class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                                    <div class="fromGroup">
+                                                        <div class="form-control-icon">
+                                                            <x-forms.input type="text" name="ref_mobile"
+                                                                value="{{$candidate->ref_mobile}}" placeholder="{{ __('reference_mobile') }}"
+                                                                class="" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 mb-3">
+                                                    <x-forms.label :required="true" name="reference_address"
+                                                        class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                                    <div class="fromGroup">
+                                                        <div class="form-control-icon">
+                                                            <x-forms.input type="text" name="ref_address"
+                                                                value="{{$candidate->ref_address}}" placeholder="{{ __('reference_address') }}"
+                                                                class="" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
                                                 <div class="col-12 mb-3">
                                                     <x-forms.label :required="false" name="personal_website"
                                                         class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
@@ -138,7 +338,7 @@
                                                 </div>
                                                 <div class="col-lg-12 mt-4">
                                                     <button type="submit" class="btn btn-primary">
-                                                        {{ __('save_changes') }}
+                                                       {{ __('save_changes') }}
                                                     </button>
                                                 </div>
                                             </div>
@@ -477,6 +677,9 @@
                                         </button>
                                     </div>
                                 </form>
+                                  <button  type="submit" class="btn btn-primary mt-4">
+                                    <a href="{{ route('candidate.cv') }}" class="btn btn-dark">{{ __('generate_cv') }}</a>
+                                        </button>
                                 <hr>
                                 <div class="dashboard-account-setting-item setting-border">
                                     {{-- <h6>{{ __('notification') }}</h6> --}}

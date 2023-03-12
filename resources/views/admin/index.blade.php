@@ -14,23 +14,23 @@
         <x-setup-guide />
     @endif
     <div class="row">
-        <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box">
-                <span class="info-box-icon bg-info elevation-1"><i class="fas fa-dollar-sign"></i></span>
-                <div class="info-box-content">
-                    <span class="info-box-text">{{ __('earnings') }}</span>
+        {{-- <div class="col-12 col-sm-6 col-md-3">
+          {{-- <div class="info-box"> --}}
+                {{-- <span class="info-box-icon bg-info elevation-1"><i class="fas fa-dollar-sign"></i></span> --}}
+                {{-- <div class="info-box-content">
+                    {{-- <span class="info-box-text">{{ __('earnings') }}</span>
                     <span class="info-box-number">
                         {{ currencyPosition($data['earnings']) }} @if ($data['earnings'] == null || $data['earnings'] == 0)
                             0
                         @endif
                         <span data-toggle="tooltip"
                             title="All the earnings are converted to '{{ config('jobpilot.currency') }}' currency">
-                            <x-svg.info-icon />
-                        </span>
-                    </span>
-                </div>
-            </div>
-        </div>
+                            <x-svg.info-icon /> --}}
+                        {{-- </span> --}}
+                    {{-- </span> --}}
+                {{-- </div> --}}
+            {{-- </div>--}}
+       {{-- </div> --}}
         <div class="clearfix hidden-md-up"></div>
         <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box mb-3">
@@ -350,10 +350,10 @@
                                                 {{ $user->created_at->diffForHumans() }}
                                             </td>
                                             <td class="d-flex">
-                                                <a href="{{ $user->role == 'company' ? route('company.show', $user->company->id) : route('candidate.show', $user->candidate->id) }}"
+                                                {{-- <a href="{{ $user->role == 'company' ? route('company.show', $user->company->id) : route('candidate.show', $user->candidate->id) }}"
                                                     class="btn bg-primary mr-1">
                                                     <i class="fas fa-eye"></i>
-                                                </a>
+                                                </a> --}}
                                             </td>
                                         </tr>
                                     @endforeach

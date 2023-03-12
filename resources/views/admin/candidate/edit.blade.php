@@ -189,6 +189,88 @@
                                             @enderror
                                         </div>
                                     </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <x-forms.label :required="true" name="language"
+                                            class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                        <div class="fromGroup">
+                                            <div class="form-control-icon">
+                                                <x-forms.input type="text" name="language"
+                                                    value="{{$candidate->language}}" placeholder="{{ __('language') }}"
+                                                    class="" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <x-forms.label name="language_level" :required="false" />
+                                            <select name="language_level" id="language_level"
+                                                class="form-control @error('gender') is-invalid @enderror">
+                                                <option value="basic">{{ __('basic') }}</option>
+                                                <option value="intermediate">{{ __('intermediate') }}</option>
+                                                <option value="advanced">{{ __('advanced') }}</option>
+
+                                            </select>
+                                            @error('language_level')
+                                                <span class="invalid-feedback" role="alert">{{ __($message) }}</span>
+                                            @enderror
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-lg-6 mb-3">
+                                        <x-forms.label :required="true" name="reference_name"
+                                            class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                        <div class="fromGroup">
+                                            <div class="form-control-icon">
+                                                <x-forms.input type="text" name="ref_name"
+                                                    value="{{$candidate->ref_name}}" placeholder="{{ __('reference_name') }}"
+                                                    class="" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <x-forms.label :required="true" name="reference_position"
+                                            class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                        <div class="fromGroup">
+                                            <div class="form-control-icon">
+                                                <x-forms.input type="text" name="ref_position"
+                                                    value="{{$candidate->ref_position}}" placeholder="{{ __('reference_position') }}"
+                                                    class="" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <x-forms.label :required="true" name="reference_mobile"
+                                            class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                        <div class="fromGroup">
+                                            <div class="form-control-icon">
+                                                <x-forms.input type="text" name="ref_mobile"
+                                                    value="{{$candidate->ref_mobile}}" placeholder="{{ __('reference_mobile') }}"
+                                                    class="" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mb-3">
+                                        <x-forms.label :required="true" name="reference_address"
+                                            class="pointer body-font-4 d-block text-gray-900 rt-mb-8" />
+                                        <div class="fromGroup">
+                                            <div class="form-control-icon">
+                                                <x-forms.input type="text" name="ref_address"
+                                                    value="{{$candidate->ref_address}}" placeholder="{{ __('reference_address') }}"
+                                                    class="" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <x-forms.label name="gender" />
